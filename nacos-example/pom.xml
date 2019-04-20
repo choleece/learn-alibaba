@@ -16,21 +16,4 @@
     <modules>
         <module>nacos-discovery-example</module>
     </modules>
-
-    <dependencies>
-    </dependencies>
-
-    <!--<dependencyManagement>-->
-        <!--<dependencies>-->
-            <!--<dependency>-->
-                <!--<groupId>org.springframework.cloud</groupId>-->
-                <!--<artifactId>spring-cloud-alibaba-dependencies</artifactId>-->
-                <!--<version>${spring.cloud.alibaba.version}</version>-->
-                <!--<type>pom</type>-->
-                <!--<scope>import</scope>-->
-            <!--</dependency>-->
-        <!--</dependencies>-->
-    <!--</dependencyManagement>-->
-
-
 </project>
