@@ -12,6 +12,7 @@
 
   <modules>
     <module>nacos-example</module>
+    <module>dubbo-example</module>
   </modules>
 
   <name>learn-alibaba</name>
