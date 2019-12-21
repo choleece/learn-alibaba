@@ -15,5 +15,6 @@
 
     <modules>
         <module>nacos-discovery-example</module>
+        <module>nacos-config-example</module>
     </modules>
 </project>
