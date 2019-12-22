@@ -32,7 +32,7 @@ public class TestController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index() {
-        return restTemplate1.getForObject("http://nacos-discovery-provider", String.class);
+        return restTemplate1.getForObject("http://nacos-discovery-provider/", String.class);
     }
 
     @RequestMapping(value = "/test", method = RequestMethod.GET)
