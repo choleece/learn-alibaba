@@ -4,9 +4,7 @@ import cn.choleece.cloud.nacos.config.annotation.CurrentUser;
 import cn.choleece.cloud.nacos.config.annotation.DataAuth;
 import cn.choleece.cloud.nacos.config.modal.SysUser;
 import cn.choleece.cloud.nacos.config.service.IDataAuthService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author choleece
@@ -24,5 +22,10 @@ public class DataAuthController {
         System.out.println(sysUser.toString());
         System.out.println("id: " + id);
         return id;
+    }
+
+    @PostMapping("/user")
+    public String addUser(@RequestBody SysUser sysUser) {
+        return sysUser.toString();
     }
 }

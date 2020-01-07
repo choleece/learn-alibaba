@@ -25,6 +25,9 @@ public class CurrentUserHandlerMethodArgumentResolver implements HandlerMethodAr
     public Object resolveArgument(MethodParameter methodParameter, @Nullable ModelAndViewContainer modelAndViewContainer, NativeWebRequest nativeWebRequest, @Nullable WebDataBinderFactory webDataBinderFactory) throws Exception {
 
         System.out.println("谁先谁后呢,,,");
-        return SysUser.builder().id("1").userName("choleece").build();
+        SysUser sysUser = new SysUser();
+        sysUser.setId("1");
+        sysUser.setUserName("choleece");
+        return sysUser;
     }
 }
