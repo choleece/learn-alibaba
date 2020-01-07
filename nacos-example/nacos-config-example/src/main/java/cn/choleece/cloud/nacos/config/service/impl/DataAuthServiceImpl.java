@@ -17,8 +17,6 @@ public class DataAuthServiceImpl implements IDataAuthService {
 
         System.out.println("我来鉴权了...");
 
-        System.out.println(sysUser.toString() + " id: " + id);
-
         return "1".equals(id);
     }
 }
